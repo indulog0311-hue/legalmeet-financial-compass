@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ============================================
+       LEGALMEET ANALYTICS V6.0 - INSTITUTIONAL THEME
+       Professional Financial Design System
+       ============================================ */
+    
+    /* Base Surface Colors */
+    --background: 210 20% 98%;
+    --foreground: 213 32% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 32% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 32% 12%;
+
+    /* Primary - Deep Corporate Navy */
+    --primary: 209 61% 17%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary - Light Blue-Gray */
+    --secondary: 210 25% 95%;
+    --secondary-foreground: 209 61% 17%;
+
+    /* Muted */
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Institutional Teal */
+    --accent: 173 58% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    /* ============================================
+       SEMANTIC STATUS COLORS (Financial)
+       ============================================ */
+    
+    /* Positive - Profits, Success, Goals Met */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Negative - Losses, Errors, Alerts */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Warning - Caution, Review Required */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    
+    /* Info - Neutral, Informational */
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 100%;
+
+    /* ============================================
+       CHART COLORS (6-color palette)
+       ============================================ */
+    --chart-1: 217 91% 60%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 38 92% 50%;
+    --chart-5: 330 81% 60%;
+    --chart-6: 186 94% 41%;
+
+    /* Borders & Inputs */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 209 61% 17%;
+
+    --radius: 0.625rem;
+
+    /* ============================================
+       SIDEBAR - Dark Navy Professional
+       ============================================ */
+    --sidebar-background: 209 61% 14%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 173 58% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 209 50% 22%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 209 50% 20%;
+    --sidebar-ring: 173 58% 45%;
+    --sidebar-muted: 210 20% 80%;
+
+    /* ============================================
+       FINANCE-SPECIFIC TOKENS
+       ============================================ */
+    --finance-navy: 209 61% 17%;
+    --finance-navy-light: 209 50% 25%;
+    --finance-navy-dark: 209 61% 10%;
+    --finance-teal: 173 58% 39%;
+    --finance-teal-light: 173 58% 55%;
+    --finance-gold: 45 93% 47%;
+    --finance-positive: 160 84% 39%;
+    --finance-negative: 0 72% 51%;
+    --finance-neutral: 215 16% 47%;
+    
+    /* KPI Card Sizes */
+    --kpi-lg: 3rem;
+    --kpi-md: 2rem;
+    --kpi-sm: 1.5rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(209 61% 17%) 0%, hsl(209 50% 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(173 58% 39%) 0%, hsl(173 58% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --gradient-positive: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(160 84% 50%) 100%);
+    --gradient-negative: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(0 72% 60%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(209 61% 17% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(209 61% 17% / 0.1), 0 2px 4px -2px hsl(209 61% 17% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(209 61% 17% / 0.1), 0 4px 6px -4px hsl(209 61% 17% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(209 61% 17% / 0.1), 0 8px 10px -6px hsl(209 61% 17% / 0.1);
+    --shadow-glow: 0 0 20px hsl(173 58% 39% / 0.3);
+    --shadow-glow-positive: 0 0 20px hsl(160 84% 39% / 0.3);
+    --shadow-glow-negative: 0 0 20px hsl(0 72% 51% / 0.3);
+  }
+
+  .dark {
+    --background: 213 32% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 213 32% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 213 32% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 173 58% 45%;
+    --primary-foreground: 213 32% 6%;
+
+    --secondary: 213 32% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 213 32% 14%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 173 58% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 160 84% 45%;
+    --success-foreground: 213 32% 6%;
+    
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 0%;
+    
+    --info: 217 91% 65%;
+    --info-foreground: 213 32% 6%;
+
+    --chart-1: 217 91% 65%;
+    --chart-2: 160 84% 45%;
+    --chart-3: 262 83% 65%;
+    --chart-4: 38 92% 55%;
+    --chart-5: 330 81% 65%;
+    --chart-6: 186 94% 50%;
+
+    --border: 213 32% 18%;
+    --input: 213 32% 18%;
+    --ring: 173 58% 45%;
+
+    --sidebar-background: 213 32% 4%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 173 58% 50%;
+    --sidebar-primary-foreground: 213 32% 6%;
+    --sidebar-accent: 213 32% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 213 32% 14%;
+    --sidebar-ring: 173 58% 50%;
+    --sidebar-muted: 215 20% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* ============================================
+     INSTITUTIONAL FINANCE COMPONENTS
+     ============================================ */
+  
+  /* Finance Card - Base container */
+  .finance-card {
+    @apply bg-card rounded-xl border border-border;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .finance-card-elevated {
+    @apply finance-card;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Finance Statistics Typography */
+  .finance-stat-lg {
+    font-size: var(--kpi-lg);
+    @apply font-bold tracking-tight leading-none;
+  }
+  
+  .finance-stat-md {
+    font-size: var(--kpi-md);
+    @apply font-bold tracking-tight leading-none;
+  }
+  
+  .finance-stat-sm {
+    font-size: var(--kpi-sm);
+    @apply font-semibold tracking-tight leading-none;
+  }
+
+  .finance-label {
+    @apply text-xs font-medium text-muted-foreground uppercase tracking-wider;
+  }
+
+  .finance-sublabel {
+    @apply text-sm text-muted-foreground;
+  }
+
+  /* Status Colors */
+  .finance-positive {
+    @apply text-success;
+  }
+
+  .finance-negative {
+    @apply text-destructive;
+  }
+
+  .finance-warning {
+    @apply text-warning;
+  }
+
+  .finance-neutral {
+    @apply text-muted-foreground;
+  }
+
+  /* ============================================
+     ALERT SEVERITY BADGES
+     ============================================ */
+  .alert-critica {
+    @apply bg-destructive/10 text-destructive border-destructive/30;
+  }
+
+  .alert-alta {
+    @apply bg-warning/10 text-warning border-warning/30;
+  }
+
+  .alert-media {
+    @apply bg-info/10 text-info border-info/30;
+  }
+
+  .alert-baja {
+    @apply bg-muted text-muted-foreground border-muted-foreground/30;
+  }
+
+  /* ============================================
+     KPI CARDS - Institutional Style
+     ============================================ */
+  .kpi-card {
+    @apply finance-card p-5 transition-all duration-200;
+  }
+
+  .kpi-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .kpi-card-compact {
+    @apply finance-card p-3 transition-all duration-200;
+  }
+
+  .kpi-card-lg {
+    @apply finance-card p-6 transition-all duration-200;
+  }
+
+  /* KPI Status Borders */
+  .kpi-status-success {
+    @apply border-l-4 border-l-success;
+  }
+  
+  .kpi-status-warning {
+    @apply border-l-4 border-l-warning;
+  }
+  
+  .kpi-status-danger {
+    @apply border-l-4 border-l-destructive;
+  }
+  
+  .kpi-status-neutral {
+    @apply border-l-4 border-l-muted-foreground;
+  }
+  
+  .kpi-status-info {
+    @apply border-l-4 border-l-info;
+  }
+
+  /* ============================================
+     DATA TABLE STYLING
+     ============================================ */
+  .finance-table {
+    @apply w-full text-sm border-collapse;
+  }
+
+  .finance-table th {
+    @apply text-left font-semibold text-muted-foreground uppercase text-xs tracking-wider py-3 px-4 bg-muted/50 border-b border-border whitespace-nowrap;
+  }
+
+  .finance-table td {
+    @apply py-3 px-4 border-b border-border;
+  }
+
+  .finance-table tbody tr:hover {
+    @apply bg-muted/30;
+  }
+
+  /* Table number alignment */
+  .finance-table td.number {
+    @apply text-right font-mono tabular-nums whitespace-nowrap;
+  }
+
+  .finance-table td.number-positive {
+    @apply text-right font-mono tabular-nums text-success font-medium whitespace-nowrap;
+  }
+
+  .finance-table td.number-negative {
+    @apply text-right font-mono tabular-nums text-destructive font-medium whitespace-nowrap;
+  }
+
+  /* Fix sticky cell overlap */
+  .finance-table td.sticky,
+  .finance-table th.sticky {
+    @apply z-10;
+  }
+
+  /* ============================================
+     NUMBER FORMATTING
+     ============================================ */
+  .number-positive {
+    @apply text-success font-medium;
+  }
+
+  .number-negative {
+    @apply text-destructive font-medium;
+  }
+
+  .number-currency {
+    @apply font-mono text-right tabular-nums;
+  }
+
+  /* Negative in parentheses (accounting style) */
+  .number-accounting-negative {
+    @apply text-destructive font-mono tabular-nums;
+  }
+
+  /* ============================================
+     SIDEBAR NAVIGATION
+     ============================================ */
+  .nav-active {
+    @apply bg-sidebar-accent text-sidebar-primary;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200;
+  }
+
+  .nav-item-default {
+    @apply text-sidebar-foreground/70 hover:bg-sidebar-accent/50 hover:text-sidebar-foreground;
+  }
+
+  .nav-group-header {
+    @apply px-3 py-2 text-xs font-semibold uppercase tracking-wider;
+  }
+
+  /* ============================================
+     COMMAND PALETTE
+     ============================================ */
+  .command-overlay {
+    @apply fixed inset-0 z-50 bg-foreground/50 backdrop-blur-sm;
+  }
+
+  .command-dialog {
+    @apply fixed left-1/2 top-1/4 z-50 w-full max-w-lg -translate-x-1/2 rounded-xl border border-border bg-card shadow-xl;
+  }
+
+  .command-input {
+    @apply w-full border-0 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-muted-foreground;
+  }
+
+  .command-item {
+    @apply flex items-center gap-3 px-4 py-3 text-sm cursor-pointer hover:bg-muted/50;
+  }
+
+  .command-item-active {
+    @apply bg-accent/10 text-accent;
+  }
+
+  .command-shortcut {
+    @apply ml-auto text-xs text-muted-foreground font-mono;
+  }
+}
+
+@layer utilities {
+  /* Colombian/Financial number format helper */
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-background/80 backdrop-blur-sm;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .text-gradient-positive {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-positive);
+  }
+
+  /* Focus ring for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  /* Scrollbar styling */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-muted/50 rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full hover:bg-muted-foreground/50;
+  }
+
+  /* Truncate with ellipsis */
+  .truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
