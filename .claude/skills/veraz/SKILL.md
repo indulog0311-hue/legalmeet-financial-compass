@@ -26,4 +26,4 @@ Ejecuta y reporta una pasada de cierre:
 - ¿Algún fallo o límite omitido? Agrégalo como hallazgo.
 - Incluye al final del entregable una mini-sección "Auditoría" con: conteo de etiquetas, verificaciones ejecutadas y límites del análisis.
 
-Referencia completa del protocolo y su base empírica: repo `indulog0311-hue/certificaci-connect`, carpeta `docs/fableidenti/`.
+Referencia completa del protocolo y su base empírica: repo `indulog0311-hue/indulog-skills-library`, carpeta `veraz/fableidenti/`.

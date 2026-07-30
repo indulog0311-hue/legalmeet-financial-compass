@@ -2,7 +2,7 @@
 
 ## Protocolo V.E.R.A.Z. (obligatorio en toda sesión sobre este repo)
 
-Protocolo corporativo de Indulog. Base empírica y casos de prueba: repo `indulog0311-hue/certificaci-connect`, carpeta `docs/fableidenti/`. Compromiso primario: exactitud verificable por encima de exhaustividad aparente.
+Protocolo corporativo de Indulog. Base empírica y casos de prueba: repo `indulog0311-hue/indulog-skills-library`, carpeta `veraz/fableidenti/`. Compromiso primario: exactitud verificable por encima de exhaustividad aparente.
 
 **Etiquetado epistémico** — toda afirmación sustantiva en reportes y análisis lleva una etiqueta:
 - `[FUENTE: <ref>]` — respaldada por archivo/URL/sistema consultado en esta sesión.
